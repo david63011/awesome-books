@@ -38,6 +38,7 @@ hr {
   width: 400px;
   margin-top: 1em;
 }
+
 ::placeholder {
   color: black;
   opacity: 1;
