@@ -8,19 +8,31 @@
     <title>Your Books</title>
   </head>
   <body>
-    <main>
-      <div>
-        <h1>Awesome Books</h1>
+    <main class="main-part">
+      <div class="top-bar">
+        <h1 class="awesome">Awesome Books</h1>
       </div>
-      <div id="list">
-        <ul id="book-list"></ul>
+      <div class="list-top">
+        <div id="book-list"></div>
       </div>
-      <div id="form">
+      <div class="middle-bar">
+        <h2 class="booktitle">Add a new book</h2>
+      </div>
+
+      <hr />
+
+      <div class="form1" id="form">
         <form action="#" method="post">
-          <input id="bookTitle" type="text" placeholder="Title" /> <br />
-          <input id="bookAuthor" type="text" placeholder="Author" />
+          <input class="title" id="bookTitle" type="text" placeholder="Title" />
+          <br />
+          <input
+            class="author"
+            id="bookAuthor"
+            type="text"
+            placeholder="Author"
+          />
         </form>
-        <button id="add-btn" type="button">Add</button>
+        <button class="add" id="add-btn" type="button">Add</button>
       </div>
     </main>
     <script src="main.js"></script>
