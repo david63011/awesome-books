@@ -41,6 +41,7 @@ li {
   color: black;
   font-weight: bold;
 }
+
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -79,6 +80,7 @@ li {
   margin-top: 1em;
   margin-right: 1em;
 }
+
 .delete-btn:hover {
   background-color: #87888a;
   cursor: pointer;
@@ -135,14 +137,6 @@ li {
 .title,
 .title1 {
   text-align: center;
-}
-
-.input-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  gap: 10px;
 }
 
 .book {
