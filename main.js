@@ -109,3 +109,14 @@ function displaySection(section) {
       break;
   }
 }
+
+const timeAndDate = document.querySelector('.date');
+
+const dateAndTime = () => {
+  setInterval(() => {
+    const date = new Date().toUTCString();
+    timeAndDate.innerHTML = date;
+  }, 0);
+};
+
+dateAndTime();

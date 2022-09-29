@@ -170,3 +170,7 @@ li {
 .info {
   margin-top: 3em;
 }
+
+#date {
+  margin-left: auto;
+}
