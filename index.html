@@ -5,36 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <title>Your Books</title>
+    <title>Awesome Books</title>
   </head>
   <body>
-    <main class="main-part">
-      <div class="top-bar">
-        <h1 class="awesome">Awesome Books</h1>
-      </div>
-      <div class="list-top">
-        <div id="book-list"></div>
-      </div>
-      <div class="middle-bar">
-        <h2 class="booktitle">Add a new book</h2>
+    <div class="navbar">
+      <h2 class="awe-books">Awesome Books</h2>
+      <nav>
+        <ul class="list">
+          <li class="nav-list">
+            <a href="#" id="navList" onclick="displaySection('list')">List</a>
+          </li>
+          <li class="nav-list">
+            <a href="#" id="navNew" onclick="displaySection('form')">Add New</a>
+          </li>
+          <li class="nav-list">
+            <a href="#" id="navContact" onclick="displaySection('contact')"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="date" class="date"></div>
+
+    <main>
+      <div class="title1">
+        <h1 id="title" class="title">All Awesome Books</h1>
       </div>
 
-      <hr />
+      <div id="list" class="list">
+        <ul id="book-list"></ul>
+      </div>
 
-      <div class="form1" id="form">
-        <form action="#" method="post">
-          <input class="title" id="bookTitle" type="text" placeholder="Title" />
-          <br />
+      <div id="form" class="form">
+        <form action="#" class="input-form" method="post">
+          <input
+            class="title3"
+            id="bookTitle"
+            type="text"
+            placeholder="Title"
+          />
           <input
             class="author"
             id="bookAuthor"
             type="text"
             placeholder="Author"
           />
+          <button class="add" id="add-btn" type="button">Add</button>
         </form>
-        <button class="add" id="add-btn" type="button">Add</button>
+      </div>
+
+      <div id="contact" class="contact">
+        <p class="para">
+          If you have any questions or you just want to say "Hello". You can
+          reach us to.
+        </p>
+        <ul class="info">
+          <li>Our email: <a href="#">mail@mail.com</a></li>
+          <li>Our twitter: <a href="#">@awesomeBooks</a></li>
+          <li>Our Phone Number: <a href="#">+56-973544953</a></li>
+        </ul>
       </div>
     </main>
+    <footer class="footer">
+      <h3>Copyright &copy;</h3>
+    </footer>
+
     <script src="main.js"></script>
   </body>
 </html>

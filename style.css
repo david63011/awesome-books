@@ -1,64 +1,63 @@
-.forms li {
+body {
+  height: 98vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
   list-style: none;
 }
 
-hr {
-  width: 20%;
-}
-
-.top-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.middle-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.awesome {
-  font-size: 35px;
-}
-
-.author {
-  margin-bottom: 1em;
-  padding: 5px;
-  border-color: black;
-  border-width: thick;
-  width: 400px;
-}
-
 .title {
-  margin-bottom: 1em;
-  padding: 5px;
-  border-color: black;
-  border-width: thick;
-  width: 400px;
-  margin-top: 1em;
+  text-align: center;
 }
 
-::placeholder {
+.footer,
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border: black;
+  border-style: solid;
+}
+
+.footer {
+  margin-top: 15em;
+}
+
+.form,
+.contact {
+  display: none;
+}
+
+.navbar a {
+  text-decoration: none;
   color: black;
-  opacity: 1;
   font-weight: bold;
 }
 
-.add {
-  margin-bottom: 1em;
-  border-color: black;
-  border-width: thick;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 1em;
+  margin-top: 1.5em;
 }
 
-.add:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .dark {
@@ -67,19 +66,6 @@ hr {
 
 .light {
   background-color: #bdc0c7;
-}
-
-.book {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-}
-
-.form1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .delete-btn {
@@ -100,9 +86,91 @@ hr {
   cursor: pointer;
 }
 
-.list-top {
-  border: 3px solid #000;
-  border-radius: 8px;
-  width: 60%;
-  margin: 0 auto;
+.author {
+  margin-bottom: 1em;
+  padding: 5px;
+  border-color: black;
+  border-width: thick;
+  width: 400px;
+}
+
+.title3 {
+  margin-bottom: 1em;
+  padding: 5px;
+  border-color: black;
+  border-width: thick;
+  width: 400px;
+}
+
+.add {
+  margin-bottom: 1em;
+  border-color: black;
+  border-width: thick;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.add:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.title1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  margin-bottom: 10em;
+}
+
+.title,
+.title1 {
+  text-align: center;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.list li:hover {
+  background-color: #87888a;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+  font-weight: bold;
+}
+
+.contact {
+  position: absolute;
+  left: 33%;
+  right: 25%;
+}
+
+.para {
+  margin-top: 3em;
+}
+
+.info {
+  margin-top: 3em;
+}
+
+#date {
+  margin-left: auto;
 }

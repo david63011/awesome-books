@@ -41,13 +41,13 @@ function getInput() {
 
 function addToUI(bookObj) {
   let colorClass = '';
-  if (library.data.indexOf(bookObj) % 2 === 0) {
+  if (library.data.indexOf(bookObj) % 2 !== 0) {
     colorClass = 'light';
   } else {
     colorClass = 'dark';
   }
   const bookList = document.getElementById('book-list');
-  const book = document.createElement('div');
+  const book = document.createElement('li');
   book.classList.add('book');
   book.classList.add(colorClass);
   book.setAttribute('id', bookObj.id);
@@ -75,3 +75,48 @@ window.onload = () => {
 
   library.data.forEach((book) => addToUI(book));
 };
+
+// eslint-disable-next-line no-unused-vars
+function displaySection(section) {
+  const sectionList = document.getElementById('list');
+  const sectionForm = document.getElementById('form');
+  const sectionContact = document.getElementById('contact');
+  const heading = document.getElementById('title');
+
+  switch (section) {
+    case 'list':
+      sectionList.style.display = 'block';
+      sectionForm.style.display = 'none';
+      sectionContact.style.display = 'none';
+      heading.innerHTML = 'All Awesome Books';
+      break;
+
+    case 'form':
+      sectionList.style.display = 'none';
+      sectionForm.style.display = 'block';
+      sectionContact.style.display = 'none';
+      heading.innerHTML = 'Add a New Book';
+      break;
+
+    case 'contact':
+      sectionList.style.display = 'none';
+      sectionForm.style.display = 'none';
+      sectionContact.style.display = 'block';
+      heading.innerHTML = 'Contact Information';
+      break;
+
+    default:
+      break;
+  }
+}
+
+const timeAndDate = document.querySelector('.date');
+
+const dateAndTime = () => {
+  setInterval(() => {
+    const date = new Date().toUTCString();
+    timeAndDate.innerHTML = date;
+  }, 0);
+};
+
+dateAndTime();
