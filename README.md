@@ -10,8 +10,17 @@ HTML
 CSS
 JS
 
+# Getting Started
+
+To get a local copy up follow these simple example steps.
+
+# Prerequisites
+
+GIT
+
 # Setup
 
+Open a terminal or git bash in the desired directory and
 Please clone my repo at https://github.com/david63011/awesome-books.git
 
 # Author
